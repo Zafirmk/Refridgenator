@@ -1,0 +1,11 @@
+.container {
+    position: relative;
+    text-align: center;
+}
+
+
+.uploadImageSection {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}

@@ -20,7 +20,11 @@ class Home extends React.Component {
               >
                 <Button variant="contained" component="label">
                   <PublishIcon /> <div>&nbsp; Upload File</div>
-                  <input type="file" style={{ display: "none" }} />
+                  <input
+                    type="file"
+                    style={{ display: "none" }}
+                    onChange={this.handleChange}
+                  />
                 </Button>
               </Box>
             </Paper>
@@ -35,6 +39,9 @@ class Home extends React.Component {
       </Box>
     );
   }
+  handleChange = e => {
+    console.log(e.target.value);
+  };
 }
 
 export default withStore()(Home);
